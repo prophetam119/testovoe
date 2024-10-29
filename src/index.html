@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <div class="container">
+        <form class="feedback-form" id="feedbackForm">
+            <h2>Обратная связь</h2>
+            
+            <div class="form-group">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" placeholder="Введите ваше имя">
+                <div class="error-message" data-error="name"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Введите ваш email">
+                <div class="error-message" data-error="email"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Телефон</label>
+                <input type="text" id="phone" name="phone" placeholder="+7 (___) ___-__-__">
+                <div class="error-message" data-error="phone"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Сообщение</label>
+                <textarea id="message" name="message" placeholder="Введите ваше сообщение"></textarea>
+                <div class="error-message" data-error="message"></div>
+            </div>
+
+            <button type="submit">Отправить</button>
+        </form>
+
+        <button class="modal-trigger" id="modalTrigger">Открыть модальное окно</button>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Модальное окно</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus velit voluptatem aperiam voluptates, doloribus cum, minus explicabo iste eius corporis laborum. Fuga quae fugiat ea officia, tenetur temporibus in debitis!</p>
+        </div>
+    </div>
+</body>
+</html>
